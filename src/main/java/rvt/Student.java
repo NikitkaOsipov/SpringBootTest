@@ -13,4 +13,29 @@ public class Student {
         this.email = email;
         this.group = group;
     }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public String getGroup() {
+        return group;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public String[] toArray() {
+        return new String[] {
+            this.name,
+            this.surname,
+            this.email,
+            this.group
+        };
+    } 
 }
